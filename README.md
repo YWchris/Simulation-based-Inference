@@ -13,16 +13,13 @@
 
 ### Data
 
-- Describe Brutus and how the theoretical model works
-We used BRUTUS, an open-source Python package to generate simulated stellar spectral energy distributions (SEDs), based on grids of stellar models constrained by photometric and astrometric data. The intrinsic magnitudes are constructed using a combination of intrinsic parameters that incorporate stellar evolutionary models and stellar atmospheric models
+- We used BRUTUS, an open-source Python package to generate simulated stellar spectral energy distributions (SEDs), based on grids of stellar models constrained by photometric and astrometric data. The intrinsic magnitudes are constructed using a combination of intrinsic parameters that incorporate stellar evolutionary models and stellar atmospheric models
 combined with a given set of photometric filters. These are modified by extrinsic parameters including the distance, which can be compared to astrometric parallax measurements, and the visual extinction and “differential” reddening, which are based on empirical dust extinction models.
 
 
-- Describe the 6 stellar parameters
-We used a uniform prior for the six stellar parameters, the parameters included the initial mass of the star, stellar metallicity (Fe/H), EEP/100 (Equivalent Evolutionary Points), visual extinction (AV), differential reddening (RV) and log(distance).
+- We used a uniform prior for the six stellar parameters, the parameters included the initial mass of the star, stellar metallicity (Fe/H), EEP/100 (Equivalent Evolutionary Points), visual extinction (AV), differential reddening (RV) and log(distance).
 
-- How we simulate the SED data:
-Noise used: Adding noise to theoretical SEDs to mimic observational uncertainties. In order to align our training set with real-world observations, we introduce a degree of uncertainty to the training data by incorporating Gaussian noise. Specifically, we apply an error term of 0.02 for the standard SBI approach, while for the enhanced SBI++ approach, we adopt a uniform distribution of errors ranging from 0.02 to 0.1.
+- Adding noise to theoretical SEDs to mimic observational uncertainties. In order to align our training set with real-world observations, we introduce a degree of uncertainty to the training data by incorporating Gaussian noise. Specifically, we apply an error term of 0.02 for the standard SBI approach, while for the enhanced SBI++ approach, we adopt a uniform distribution of errors ranging from 0.02 to 0.1.
 
 ### Method
 
